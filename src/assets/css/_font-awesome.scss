@@ -1,0 +1,30 @@
+@mixin icon($content: false, $where: before) {
+
+	text-decoration: none;
+
+	&:#{$where} {
+
+		@if $content {
+			content: $content;
+		}
+
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
+
+	}
+
+}
+
+.icon {
+    @include icon;
+    border-bottom: none;
+    position: relative;
+
+    > .label {
+        display: none;
+    }
+}

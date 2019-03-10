@@ -1,0 +1,13 @@
+@import '../assets/css/variables';
+
+.content {
+    display: inline-block;
+    position: absolute; /* Ensure the content is to the right of the sidebar */
+
+    background-color: rgb(235, 235, 235);
+    margin-left: $sidebar-shadow;
+    padding: 10px 0 0 10px;
+
+    width: calc(100% - #{$sidebar-width} - 10px - #{$sidebar-shadow});
+    height: calc(100% - 10px);
+}

@@ -1,19 +1,23 @@
-import React from 'react'
-import '../assets/scss/main.scss'
+import React from 'react';
 
-import Header from './Header'
+import { Sidebar } from './Sidebar';
 
-class Template extends React.Component {
-    render() {
-        const { children } = this.props
+import { WebHelmet } from './WebHelmet';
 
-        return (
-            <div>
-                <Header />
+import './Layout.scss';
+
+const Layout = props => {
+    const { children } = props;
+
+    return (
+        <>
+            <WebHelmet />
+            <Sidebar />
+            <div className='content fade-in'>
                 {children}
             </div>
-        )
-    }
+        </>
+    );
 }
 
-export default Template
+export { Layout };
