@@ -1,8 +1,8 @@
-@import '../assets/css/font-awesome.min.css';
+@import '../../assets/css/font-awesome.min.css';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
-@import '../assets/css/font-awesome';
+@import '../../assets/css/font-awesome';
 
-@import '../assets/css/animations';
+@import '../../assets/css/animations';
 
 .weblink__button {
     background-color: rgba(39, 143, 187, 0.85);
@@ -18,5 +18,14 @@
         text-decoration: none;
         padding: 15px 0;
         width: 150px;
+    }
+
+    &.weblink__current-link {
+        background-color: rgb(82, 82, 82);
+        margin-left: 40px;
+        
+        .weblink__link {
+            cursor: default;
+        }
     }
 }

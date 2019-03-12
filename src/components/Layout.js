@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Sidebar } from './Sidebar';
+import { Sidebar } from './sidebar/Sidebar';
 
 import { WebHelmet } from './WebHelmet';
 
@@ -13,9 +13,9 @@ const Layout = props => {
         <>
             <WebHelmet />
             <Sidebar />
-            <div className='content fade-in'>
+            <main className='content fade-in'>
                 {children}
-            </div>
+            </main>
         </>
     );
 }

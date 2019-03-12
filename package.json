@@ -2,18 +2,21 @@
   "name": "tarans-portfolio",
   "description": "Taran's Portfolio",
   "version": "1.0.0",
-  "author": "Taran Gill <contact@tarangill.dev>",
+  "author": "Taran Gill",
   "dependencies": {
     "gatsby": "^2.0.76",
     "gatsby-plugin-manifest": "^2.0.9",
     "gatsby-plugin-offline": "^2.0.16",
     "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-sass": "^2.0.7",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.23",
     "node-sass": "^4.11.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
-    "react-images": "^0.5.19"
+    "react-images": "^0.5.19",
+    "react-moment": "^0.8.4"
   },
   "keywords": [
     "gatsby"
@@ -28,6 +31,7 @@
     "prettier": "^1.14.2"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/taran-gill/personal-website"
   }
 }

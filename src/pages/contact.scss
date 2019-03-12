@@ -1,0 +1,27 @@
+.contact__content {
+    $contact-top-padding: 60px;
+
+    height: calc(100% - #{$contact-top-padding});
+    padding-top: $contact-top-padding;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    img {
+        height: auto;
+        margin: 0 auto 30px;
+        width: 120px;
+    }
+}
