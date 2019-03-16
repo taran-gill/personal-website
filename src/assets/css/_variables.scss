@@ -3,3 +3,26 @@ $mobile-size: 767px;
 
 $sidebar-shadow: 2px;
 $sidebar-width: calc(100%/5);
+$sidebar-z-index: 20;
+
+$primary: rgba(39, 143, 187, 0.85);
+$secondary: rgba(182, 39, 187, 0.85);
+
+/**** Base CSS ****/
+%page-content {
+    $page-top-padding: 60px;
+
+    height: calc(100% - #{$page-top-padding});
+    margin: 0 20%;
+    padding-top: $page-top-padding;
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}

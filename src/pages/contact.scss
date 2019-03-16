@@ -1,27 +1,15 @@
-.contact__content {
-    $contact-top-padding: 60px;
+@import '../assets/css/variables';
 
-    height: calc(100% - #{$contact-top-padding});
-    padding-top: $contact-top-padding;
-    text-align: center;
+.contact__content {
+    @extend %page-content;
 
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 
-    h1 {
-        font-size: 48px;
-        margin-bottom: 16px;
-    }
-
-    p {
-        font-size: 18px;
-        line-height: 1.6;
-    }
-
     img {
         height: auto;
-        margin: 0 auto 30px;
-        width: 120px;
+        margin: 0 0 30px;
+        width: 125px;
     }
 }

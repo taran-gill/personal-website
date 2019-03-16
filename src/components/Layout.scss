@@ -5,7 +5,7 @@
     position: absolute; /* Ensure the content is to the right of the sidebar */
 
     background-color: rgb(235, 235, 235);
-    margin-left: $sidebar-shadow;
+    margin-left: calc(#{$sidebar-width} + #{$sidebar-shadow});
     padding: 10px 0 0 10px;
 
     width: calc(100% - #{$sidebar-width} - 10px - #{$sidebar-shadow});

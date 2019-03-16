@@ -34,7 +34,7 @@ class ContactPage extends React.Component {
                     <div className='contact__info'>
                         <h1>Let's talk!</h1>
                         <p>
-                            You can reach me at (<i>mailto</i> 📬)&nbsp;
+                            You can reach me at <span aria-label='mail' role='img'>📬</span>&nbsp;
                             <a href="mailto:contact@tarangill.dev" target="_top">contact@tarangill.dev</a>.
                             <br />
                             I'm situated in the Greater Toronto Area, where it's&nbsp;
