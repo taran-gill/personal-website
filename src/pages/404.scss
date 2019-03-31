@@ -1,0 +1,5 @@
+@import '../assets/css/variables';
+
+.notfound__content {
+    @extend %page-content;
+}
