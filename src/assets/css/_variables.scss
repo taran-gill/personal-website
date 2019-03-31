@@ -2,7 +2,7 @@
 $mobile-size: 767px;
 
 $sidebar-shadow: 2px;
-$sidebar-width: calc(100%/5);
+$sidebar-width: 300px;
 $sidebar-z-index: 20;
 
 $primary: rgba(39, 143, 187, 0.85);
@@ -13,7 +13,7 @@ $secondary: rgba(182, 39, 187, 0.85);
     $page-top-padding: 60px;
 
     height: calc(100% - #{$page-top-padding});
-    margin: 0 20%;
+    margin: 0 5%;
     padding-top: $page-top-padding;
 
     h1 {

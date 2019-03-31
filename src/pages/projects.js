@@ -1,11 +1,17 @@
-import React from 'react'
-import { Layout } from '../components/Layout'
+import React from 'react';
+import { Layout } from '../components/Layout';
 
-const NotFoundPage = () => (
+import './projects.scss';
+
+const ProjectsPage = () => (
   <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div className='projects__content'>
+      <h1>
+        Under construction <span aria-label='construction worker' role='img'>👷</span>
+      </h1>
+      <p>I really should work on some projects, shouldn't I?</p>
+    </div>
   </Layout>
 );
 
-export default NotFoundPage
+export default ProjectsPage

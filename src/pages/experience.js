@@ -35,13 +35,18 @@ const ExperiencePage = () => {
     );
 
     const technologiesList = (
-        <div>
+        <div className='experience__technologies'>
             {technologiesContent.map(grouping =>
                 <Fragment>
                     <h3>{grouping.level}</h3>
                     <ul>
                         {grouping.items.map(tech =>
-                            <li className={`icon fa-${tech.icon}`}>{tech.name}</li>
+                            <li>
+                                <div className='experience__technologies--item' title={tech.name}>
+                                    <img alt='' src={tech.icon} />
+                                    <label>{tech.name}</label>
+                                </div>
+                            </li>
                         )}
                     </ul>
                 </Fragment>

@@ -2,12 +2,22 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Location } from '@reach/router';
 
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+
 import './WebLink.scss';
 
-const WebLink = props => {
+const styles = {
+    root: {
+        padding: 0
+    },
+};
+
+const WebLink = withStyles(styles)(props => {
     const {
         icon,
-        location
+        location,
+        classes
     } = props;
 
     let { to } = props;
@@ -31,13 +41,15 @@ const WebLink = props => {
     }
 
     return (
-        <div className={`weblink__button ${currentPageStyle}`}>
+        <Button disabled={!!isCurrentPage} variant='contained' color='primary' 
+            className={`weblink__button ${currentPageStyle} ${classes.root}`}
+        >
             <Link className={`icon ${icon} weblink__link`} to={`/${to}`}>
                 &nbsp; {title}
             </Link>
-        </div>
+        </Button>
     );
-}
+})
 
 const WebLinkHoc = props => (
     <Location>
